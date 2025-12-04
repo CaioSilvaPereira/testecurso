@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Culturama</title>
 </head>
+
 <body>
     <header>
         <h1>Pesquisa Culturama</h1>
     </header>
     <section>
         <form action="" method="get">
-             <!--<fieldset>
+            <fieldset>
     
                 <legend>Dados Pessoais</legend>
                 <label for="userName">Nome</label>
-                <input type="text" name="userName" required>
+                <input id="userName" type="text" name="userName" required>
                 <br>
                 <label for="userAge">Idade</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <input id="userAge" type="number" name="userAge" min="12" max="100" required>
                 <br>
                 <label for="birthDate">Data de nascimento</label>
-                <input type="date" name="birthDate">
+                <input id="birthDate" type="date" name="birthDate">
                 <br>
                 <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" required>
+                <input id="userEmail" type="email" name="userEmail" required>
                 <br>
                 <label for="userPhoneNumber">Telefone</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hifén">
+                <input id="userPhoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hifén">
                 <br>
                 <label for="userImage">Upload de foto</label>
-                <input type="file" accept="image/*" name="userImage">
-                </fieldset> -->
+                <input id="userImage" type="file" accept="image/*" name="userImage">
+                </fieldset>
 
             <fieldset>
                 <legend>Perfil</legend>
 
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
+                <input id="userGenderMale" type="radio" name="userGender" value="Masculino">
+                <label for="userGenderMale">Masculino</label>
 
-                <input type="radio" name="userGender" value="Feminino">
-                <label for="userGender">Feminino</label>
-
-                <input type="radio" name="userGender" value="Prefiro não dizer">
-                <label for="userGender">Prefiro não dizer</label>
+                <input id="userGenderFemale" type="radio" name="userGender" value="Feminino">
+                <label for="userGenderFemale">Feminino</label>
+                <input id="userGenderPreferNot" type="radio" name="userGender" value="Prefiro não dizer">
+                <label for="userGenderPreferNot">Prefiro não dizer</label>
                 <br>
 
                 <label for="maritalStatus">Estado Civil:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="maritalStatus">
                     <option value="" disabled selected>Selecione...</option>
                     <option value="Solteiro(a)">Solteiro(a)</option>
                     <option value="Casado(a)">Casado(a)</option>
                     <option value="Divorciado(a)">Divorciado(a)</option>
                     <option value="Viúvo(a)">Viúvo(a)</option>
+                    
                 </select>   
                         <label for="userState">Estado:</label>
-                        <select name="userState" required>
+                        <select id="userState" name="userState" required>
                         <option value="" disabled selected>Selecione...</option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -85,17 +87,57 @@
                         <option value="São Paulo">São Paulo</option>
                         <option value="Sergipe">Sergipe</option>
                         <option value="Tocantins">Tocantins</option>
-                        </select>
+                        
+                    </select>
+                    <br>
                         <label for="userCity">Cidade:</label>
                         <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
                 </select>   
-            
+                
             </fieldset>
-            
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais</p>
+                <input id="socialInstagram" type="checkbox" name="social" value="instagram">
+                <label for="socialInstagram">Instagram</label>
+                <br>
+                
+                <input id="socialFacebook" type="checkbox" name="social" value="facebook">
+                <label for="socialFacebook">Facebook</label>
+                <br>
+                
+                <input id="socialLinkedin" type="checkbox" name="social" value="Linkedin">
+                <label for="socialLinkedin">Linkedin</label>
+                <br>
+                
+                <input id="socialX" type="checkbox" name="social" value="X">
+                <label for="socialX">X</label>
+                <br>
+
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="styleTypes" id="musicStyle" type="text" name="musicStyle" placeholder="Ex.: Rock, Pop, Sertanejo...">
+                <datalist id="styleTypes">
+                    <option value="Rock"></option>
+                    <option value="Samba"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Jazz"></option>
+                    <option value="Clássica"></option>
+                    <option value="Eletrônica"></option>
+                    <option value="Hip Hop"></option>
+                </datalist>
+                <br>
+
+                <label for="favoriteColor">Cor Favorita:</label>
+                <input id="favoriteColor" type="color" name="favoriteColor">
+            </fieldset>
+
 
             <button type="submit">Enviar</button>
 
         </form>
     </section>
 </body>
+
 </html>
