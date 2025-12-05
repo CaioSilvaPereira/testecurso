@@ -93,7 +93,7 @@ input:valid select:valid textarea:valid {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -103,5 +103,5 @@ button {
 }
 
 button:hover {
-    background-color: #8f7d7d;
+    background-color: #000000;
 }
